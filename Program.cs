@@ -2,11 +2,14 @@
 string []finalArray = new string [startArray.Length];
 int count = 0;
 
-for (int i = 0; i < startArray.Length; i++)
+void GetResult (string [] startArray, string []finalArray)
 {
-    if (startArray[i].Length <= 3)
+    for (int i = 0; i < startArray.Length; i++)
     {
-        finalArray[count] = startArray[i];
-        count++;
+        if (startArray[i].Length <= 3)
+        {
+         finalArray[count] = startArray[i];
+          count++;
+         }
     }
 }
